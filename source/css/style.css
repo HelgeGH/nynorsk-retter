@@ -1,3 +1,4 @@
+/*CSS til tooltipsene som kommer opp over ord*/
 .tooltip {
   position: relative;
   display: inline-block;
@@ -6,7 +7,7 @@
 
 .tooltip .tooltiptext {
   visibility: hidden;
-  width: 120px;
+  max-width: 240px;
   background-color: #ddd;
   color: #000;
   text-align: center;
@@ -37,8 +38,38 @@
   opacity: 1;
 }
 
-video {
-    position: absolute;
-    top: 30%;
-    left: 30%;
+/*CSS til popyp vinduet*/
+.drag-box {
+  position: absolute;
+  z-index: 9;
+  background-color: #f1f1f1;
+  text-align: center;
+  border: 1px solid #d3d3d3;
+  /*startposisjon*/
+  left: 300px;
+  top: 600px;
+}
+
+.drag-header {
+  padding: 10px;
+  cursor: move;
+  z-index: 10;
+  background-color: #2196F3;
+  color: #fff;
+}
+
+#loading {
+    position: fixed;
+	left: 35%;
+	top: 20%;
+	z-index: 9999;
+	/*background: url(images/loader-64x/Preloader_2.gif) center no-repeat #fff;*/
+}
+
+#main {
+    display: none;
+}
+
+#result span {
+
 }

@@ -7,22 +7,33 @@
     <link rel="stylesheet" href="css/style.css">
     <title>Nynorsk retter</title>
 </head>
+
 <body>
-    <div id="main">
     <!-- main -->
-    <textarea name="text" rows="50" cols="400" id="text">Det er for mørkt å gå ned til Vågen. Men eg går dit likevel. Eg svingar til høgre i krysset bortanfor huset vårt. Eg går til enden av vegen. Det er lys frå stovevindaugo, men eg ser ikkje folk. Ingen ser meg heller. Ved enden av vegen går eg inn på stien ned mot sjøen. Eg er her så ofte at eg kan gå stien i blinde. Fullmåne og kvit snø gjer det lett å ta seg fram til nausta. Sjølv
- m det er mørkt. Eg tek ingen sjansar på at nokon kan sjå meg, og smyg meg fram langs veggene. Skvulping frå små bølgjer mot steinar og bryggjer er einaste lyden eg høyrer. Og stega mine som knirkar i snøen. Eg listar meg inn i naustet som ligg nærast huset. Frå plassen eg stod sist eg var her, kan eg sjå huset tydeleg. Månen speglar seg i eine stoveglaset. Men det er vel ikkje
- erre månen som lyser der inne? Er det ikkje eit lite lys til, som lever og bivrar bak gardina? Det er nokon der. Dei er der enno. Og eg er ganske sikker på kven dei er. Men kvifor har dei gøymt seg i dette huset? Korleis visste dei om det? Eg høyrer ingen lydar. Eg ser ingen rørsler. Men likevel veit eg at dei er der. Eg kjenner det på meg. Og eg veit ikkje kva eg skal gjera med et.</textarea>
+    <div id="main">
+
+    <textarea name="text" rows="50" cols="400" id="text">Du kan klikke på orda under for å sjå dei i ordboka. Klikk "Esc" får å lukke alle boksane. Ha det gøy!
+
+</textarea>
     <button type="button" id="button">Rett</button>
     <p id="result"></p>
+    </div>
+    <!-- søt katt-->
+    <div id="loading">
+        <video autoplay loop muted>
+              <source src="media/loading.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
 
-</div>
     <!-- Scripts -->
     <script src="scripts/jquery.js" charset="utf-8"></script>
     <script src="scripts/ord_frekvens.js" charset="utf-8"></script>
     <script src="scripts/jquery.csv.js" charset="utf-8"></script>
     <script src="scripts/fullform_nn.js" charset="utf-8"></script>
     <script src="scripts/paradigme_nn.js" charset="utf-8"></script>
+    <script src="scripts/drag.js" charset="utf-8"></script>
     <script src="scripts/retter.js" charset="utf-8"></script>
 </body>
+
 </html>
